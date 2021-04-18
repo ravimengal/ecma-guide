@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Lexical Scope for This</h1>
+    <script>
+        //lexical scope is a range and limit 
+        // it means  how far object is accessable by using this
+        let data = {
+            list: 'friend',
+            names: ['bruce', 'peter', 'sam'],
+            getFriends: function() {
+                this.names.map((item) => {
+                    console.warn(this.list, item) //this refer to the global object it belong to.
+                })
+            }
+        }
+
+        data.getFriends()
+    </script>
+</body>
+
+</html>

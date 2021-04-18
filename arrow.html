@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Ecma script arrow function</title>
+</head>
+
+<body>
+    <h1>Arrow function</h1>
+    <script>
+    
+    let item={
+        name:"ravi",
+        id: 02 ,
+        getName:function()//normal function
+        {
+            console.warn("normal",this)// normal function have there own this 
+        }, 
+        getNameArrow:()=>{//arrow function we can skip the bracket if single parameter is passing
+            console.warn("arrow",this)// in arrow function it dont have its own this so it refer to the parent this
+        }
+    }
+    
+
+
+    item.getName();
+    item.getNameArrow();
+
+        
+    </script>
+</body>
+
+</html>

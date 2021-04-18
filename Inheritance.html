@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Ecma script </title>
+</head>
+
+<body>
+    <h1>Inheritance</h1>
+    <script>
+        //inheritance having some quality of parents class into child class
+        class Category {
+            dryFruit() {
+                return "Almond is dry fruit"
+            }
+            pomeFruit() {
+                return "apple is pome fruit"
+            }
+        }
+        class Fruits extends Category { //class named fruit which will inherit the methods from the category class 
+            constructor() {
+                super() //The super() method refers to the parent class.
+                console.warn("constructor")
+            }
+            getFruit() {
+                return "you got Apple";
+            }
+        }
+        let f1 = new Fruits;
+        let c1 = new Category;
+        //console.warn(c1.getFruit()) //it will give error that c1.getFruit is not a function class category can not inherit method from fruit if the category extend fruit then it can inherit method from fruit
+        console.warn(c1.dryFruit())
+    </script>
+</body>
+
+</html>

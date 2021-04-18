@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ECMA Script</title>
+</head>
+
+<body>
+    <h1>Default Parameters</h1>
+</body>
+<script>
+    function main(a, b = main()) {
+        return a + b;
+    }
+    main();
+</script>
+
+</html>

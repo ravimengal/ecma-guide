@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Ecma script</title>
+</head>
+
+<body>
+    <h1>Rest Operator</h1>
+    <script>
+        //The rest parameter allows us to pass an indefinite number of parameters to a function and access them in an array
+        function fruits(a, ...z) {
+            console.warn("fruits", z)
+        }
+
+        function test() {
+
+        }
+        fruits('apple', 'banana', 'kiwi', 'orange', 'papaya', test);
+    </script>
+</body>
+
+</html>

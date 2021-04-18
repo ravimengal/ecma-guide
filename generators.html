@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Ecma script </title>
+</head>
+
+<body>
+    <h1>Generators</h1>
+
+    <button onclick="getSetps()">Go step by step</button>
+    <script>
+        function* steps() {
+            //generator is use to pause and resume the function using yield keyword
+            // yield will pause and execute one by one each 
+            let a = 10;
+            let b = 20;
+            console.warn(10 + 20)
+            yield 'step 1 completed'
+            console.warn(10 - 20)
+            yield 'step 2 completed'
+            console.warn(10 * 20)
+            yield 'step 3 completed'
+            return "all steps done"
+        }
+        let stp = steps();
+
+        let getSetps = () => {
+            console.warn(stp.next());
+        }
+    </script>
+</body>
+
+</html>

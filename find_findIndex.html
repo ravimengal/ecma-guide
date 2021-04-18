@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Ecma script</title>
+</head>
+
+<body>
+    <h1>find and findIndex</h1> 
+    <script>
+        // let data=[10,20,7,50,1,100];
+        // find give the first value that  from  the array satisfied the conditon 
+        // findindex it will the give the first value  position in that array that satisfied the condition
+        let data = [
+            { id: 10, name: "a" },
+            { id: 8, name: "b" },
+            { id: 50, name: "c" },
+            { id: 1, name: "d" },
+            { id: 100, name: "e" },
+
+        ]
+        let result = data.find( item => {
+            return item.id;
+        })
+        console.warn(result)
+    </script>
+</body>
+
+</html>

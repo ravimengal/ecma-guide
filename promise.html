@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Ecma script</title>
+</head>
+
+<body>
+    <h1>Rest Operator</h1>
+    <script>
+        let a = undefined;
+
+
+        let promiseData = new Promise((resolved, reject) => { //A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it's not resolved 
+            setTimeout(() => {
+                a = "Hello ECMA"
+                resolved("done")
+            }, 3000);
+        })
+
+        promiseData.then(() => {
+            alert(a);
+        })
+    </script>
+</body>
+
+</html>
